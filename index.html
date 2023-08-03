@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Profile</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 800px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    form {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+
+    form label {
+      display: inline-block;
+      width: 150px;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 400px;
+    }
+
+    form input[type="submit"] {
+      width: auto;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <h1>Student Profile</h1>
+
+  <img src="file:///C:/Users/JANANI/Downloads/Student.webp" alt="Student Image">
+
+  <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="Department">Department:</label>
+    <input type="text" id="Department" name="Department" required><br><br>
+
+    <label for="Year">Year of Study:</label>
+    <input type="number" id="Year" name="Year" required><br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="LinkedIn">LinkedIn ID:</label>
+    <input type="text" id="LinkedIn" name="LinkedIn" required><br><br>
+
+    <label for="Github">Github profile:</label>
+    <input type="text" id="Github" name="Github" required><br><br>
+    
+    <label for="HackerRank">HackerRank profile:</label>
+    <input type="text" id="HackerRank" name="HackerRank" required><br><br>
+
+    <label for="Codechef">Codechef profile:</label>
+    <input type="text" id="Codechef" name="Codechef" required><br><br>
+
+    <label for="Address">Address:</label><br>
+    <textarea id="Address" name="Address" rows="6" cols="50" required></textarea><br><br>
+
+    <label for="bloodgroup">Blood Group:</label>
+    <select id="bloodgroup" name="bloodgroup" required>
+      <option value="" disabled selected>Select your blood group</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select><br><br>
+
+    <label for="Project">Project details:</label><br>
+    <textarea id="Project" name="Project" rows="6" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
